@@ -16,7 +16,7 @@ This a 3 step program:
 optional:
 - we can provide a fata frame with labels, it should contain two columns: 'label','sample'. the agregated data frame will be merged with the label data frame using the key: 'sample'
 
-### output
+### Output
 
 Four output files are produced:
 - df_header.csv: metadate associated with each sample
