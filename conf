@@ -1,0 +1,14 @@
+[config]
+
+# path to the folder containing .pxb files
+# path = /home/xavier/Downloads/DT257 Xavier Bouteiller/Radios/Mesures (copy)
+path = /home/xavier/Downloads/DT257 Xavier Bouteiller/Radios/Mesures
+
+# output path where the files will be saved
+output_path = /home/xavier/Documents/development/wooddensity
+
+# path to the df containing labels, if none, replace per NULL
+label_path = /home/xavier/Downloads/DT257 Xavier Bouteiller/Epaisseurs.csv
+
+# folder's name where the figures will be saved
+fig_folder = figure
