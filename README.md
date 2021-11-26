@@ -6,15 +6,19 @@
 
 This program is intented to filter and to aggregate the .pxb files that contains X-Ray profiles of wood pieces that can be used to compute wood density.
 
-this a 3 step program:
-- the density profile is plotted and we can select the minimum and maximum boundary values by clicking on the grpah
-- a new column 'keepit' is added with values equal to 1 for indices included between the two boundaries and 0 otherwise
+## Steps
+
+This a 3 step program:
+- the density profile is plotted and we can select the minimum and maximum boundary values by clicking on the graph
+- a new column 'keepit' is added with values equal to 1 for the indices included between the two boundaries and 0 otherwise
 - the df is concatenated with the previous one
 
 optional:
 - we can provide a fata frame with labels, it should contain two columns: 'label','sample'. the agregated data frame will be merged with the label data frame using the key: 'sample'
 
-4 files are produced as output
+## output
+
+4 output files are produced:
 - df_header.csv: metadate associated with each sample
 - df_data.csv: agregated data files
 - density.csv: fully agregated data file
