@@ -8,7 +8,9 @@ This program is intented to filter and to aggregate the .pxb files that contains
 
 ### Steps
 
-This a 3 step program:
+Program steps:
+- fill the **conf file**
+- all .pxb files within the defined folder are detected, then they are read one by one
 - the density profile is plotted and we can select the minimum and maximum boundary values by clicking on the graph
 - a new column 'keepit' is added with values equal to 1 for the indices included between the two boundaries and 0 otherwise
 - the df is concatenated with the previous one
@@ -57,7 +59,7 @@ From the green box  named 'clone' in the right corner > download .zip
 
 ### Program Execution
 
-Set the conf files with your own parameters, then execute in the terminal:
+Set the **conf file** with your own parameters, then execute in the terminal:
 
 
 >

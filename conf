@@ -5,7 +5,7 @@
 path = /home/xavier/Downloads/DT257 Xavier Bouteiller/Radios/Mesures
 
 # output path where the files will be saved
-output_path = /home/xavier/Documents/development/wooddensity
+output_path = /home/xavier/Documents/development/wooddensity/newtest
 
 # path to the df containing labels, if none, replace per NULL
 label_path = /home/xavier/Downloads/DT257 Xavier Bouteiller/Epaisseurs.csv

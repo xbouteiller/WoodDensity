@@ -42,8 +42,11 @@ class WoodDensity():
 
     def _plot_file(self, y):
         
+        try:
+            fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(15,15)) 
+        except:
+            fig, (ax1, ax2) = plt.subplots(1, 2)
 
-        fig, (ax1, ax2) = plt.subplots(1, 2)       
         ax1.plot(y)
         sns.kdeplot(axes = ax2, data = y, fill=True, common_norm=False, alpha=.5)
 
@@ -59,8 +62,10 @@ class WoodDensity():
         return maxpts, minpts
 
     def _save_file(self, y, sample, maxpts, minpts):
+
+        
         figb, (ax1b, ax2b, ax3b) = plt.subplots(1, 3)       
-     
+        
         ax1b.plot(y)
         sns.kdeplot(ax = ax2b, data = y, fill=True, common_norm=False, alpha=.5)
         sns.kdeplot(ax = ax3b, data = y[minpts+1:maxpts], fill=True, common_norm=False, alpha=.5)
@@ -83,7 +88,7 @@ class WoodDensity():
 
         plt.tight_layout()
 
-        plt.savefig(os.path.join(self.fig_folder, str(sample)+'.png'), dpi = 420, bbox_inches = 'tight')
+        plt.savefig(os.path.join(self.outputpath, self.fig_folder, str(sample)+'.png'), dpi = 420, bbox_inches = 'tight')
         
         plt.close('all')
 
@@ -223,8 +228,8 @@ class WoodDensity():
             print(df_header)
             print(df_data)
         
-            df_header.to_csv('dfheader.csv')
-            df_data.to_csv('dfdata.csv')
+            df_header.to_csv(os.path.join(self.outputpath,'dfheader.csv'))
+            df_data.to_csv(os.path.join(self.outputpath,'dfdata.csv'))
 
 
         self.df_header = df_header 
@@ -248,6 +253,6 @@ class WoodDensity():
             plt.show(block = False)
             plt.waitforbuttonpress(0)
             plt.close('all')
-            result.to_csv('density.csv')
+            result.to_csv(os.path.join(self.outputpath,'density.csv'))
         
             
