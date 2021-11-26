@@ -39,7 +39,7 @@ From the green box  named 'clone' in the right corner > download .zip
 2. From the terminal
 
 >
-> git clone https://github.com/xbouteiller/gminComputation.git
+> git clone https://github.com/xbouteiller/WoodDensity.git
 >
 
 
