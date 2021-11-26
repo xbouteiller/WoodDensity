@@ -18,7 +18,7 @@ optional:
 
 ### output
 
-4 output files are produced:
+Four output files are produced:
 - df_header.csv: metadate associated with each sample
 - df_data.csv: agregated data files
 - density.csv: fully agregated data file
